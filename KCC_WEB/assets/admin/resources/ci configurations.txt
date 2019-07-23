@@ -1,0 +1,45 @@
+--------------------------------------------------------------
+autoload.php
+============
+$autoload['libraries'] = array( 'database' );
+$autoload['helper'] = array('form', 'file', 'text', 'url');
+--------------------------------------------------------------
+config.php
+============
+$config['base_url'] = 'http://americanlaptop.test/';
+
+$config['index_page'] = '';
+
+$config['global_xss_filtering'] = TRUE;
+
+$config['csrf_protection'] = TRUE;
+$config['csrf_token_name'] = 'csrf_americanlaptop';
+$config['csrf_cookie_name'] = 'csrf_cookie_americanlaptop';
+$config['csrf_expire'] = 7200;
+$config['csrf_regenerate'] = TRUE;
+$config['csrf_exclude_uris'] = array();
+------------------------------------------------------------------
+database.php
+=============
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'americanlaptopdb',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+---------------------------------------------------------------------------

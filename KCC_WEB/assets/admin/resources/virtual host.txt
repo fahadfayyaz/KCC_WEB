@@ -1,0 +1,18 @@
+
+Create Virtual Host 
+
+step1: go to C:/windows/system32/drivers/etc "HOST"
+
+127.0.0.1 alliedlaptop.test
+
+	Apply Permission: go to properties->security->edit->users->full-controls
+
+-------------------------------------------------------------------------------
+
+step2: go to xampp/apache/conf/extra/ "httpd-vhosts.conf"
+
+<VirtualHost 127.0.0.1:80>
+    DocumentRoot "D:/xampp/htdocs/alliedlaptop"
+    ServerName alliedlaptop.test
+</VirtualHost>
+
